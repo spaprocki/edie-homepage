@@ -21,56 +21,55 @@
       rel="stylesheet"
     />
 
-    <title>Devchallenges</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet"/>
+
+    <link href="desktop-style.css" rel="stylesheet"/>
+
+    <title>Edie Homepage</title>
 
     <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
+      
     </style>
   </head>
   <body>
     <div id="site-wrapper">
-      <nav>
+      <nav class="flex-row">
         <p id="logo">Edie</p>
-        <ul id="nav-ul">
-          <li>Home</li>
-          <li>Services</li>
-          <li>Our Works</li>
-          <li>Clients</li>
-          <li>Contact</li>
-        </ul>
+        <a href="javascript:void(0)">
+          <span id="open-nav" class="material-icons" onclick="openNav()">
+            menu
+          </span>
+        </a>
+        <div id="menu">
+          <a href="javascript:void(0)" onclick="closeNav()">
+            <span id="close-nav" class="material-icons"> close </span>
+          </a>
+          <div id="list-wrapper">
+            <ul id="nav-ul">
+              <li id="home">
+                <a href="#">Home</a>
+                <div id="line"></div>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Our Works</a>
+              </li>
+              <li>
+                <a href="#">Clients</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <header>
         <p>Unhappy with your website?</p>
@@ -93,7 +92,7 @@
       </header>
       <main>
         <h3>We offer high demand services</h3>
-        <ul id="services">
+        <ul id="services-ul">
           <li>
             <span>pen</span>
             <h4>UI/UX Design</h4>
@@ -123,7 +122,7 @@
           </li>
         </ul>
         <h3>Good design means good business</h3>
-        <ul id="designs">
+        <ul id="designs-ul">
           <li>
             <img
               src="images/smarthome.jpg"
@@ -161,7 +160,7 @@
             <h3>We are chilled and a laidback team</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <ul id="team-images">
+          <ul id="team-images-ul">
             <li>
               <img src="images/person1.png" alt="An image of a person1" />
             </li>
@@ -214,5 +213,29 @@
         <p>created by <u>spaprocki</u> - devChallenges.io</p>
       </footer>
     </div>
+
+    <script>
+      function openNav() {
+        document.getElementById('menu').style.width = '100vw';
+      }
+
+      function closeNav() {
+        document.getElementById('menu').style.width = '0vw';
+      }
+
+
+      var mediaQueryList = window.matchMedia('(min-width: 768px)');
+
+      function screenTest(e) {
+        if (e.matches) {
+          openNav()
+        } else {
+          closeNav()
+        }
+      }
+
+      mediaQueryList.addListener(screenTest);
+    </script>
+
   </body>
 </html>
