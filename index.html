@@ -45,11 +45,11 @@
             menu
           </span>
         </a>
-        <div id="menu">
+        <div id="menu" class="flex">
           <a href="javascript:void(0)" onclick="closeNav()">
             <span id="close-nav" class="material-icons"> close </span>
           </a>
-          <div id="list-wrapper">
+          <div id="list-wrapper" class="flex">
             <ul id="nav-ul">
               <li id="home">
                 <a href="#">Home</a>
@@ -72,19 +72,19 @@
         </div>
       </nav>
       <header>
-        <p>Unhappy with your website?</p>
+        <p id="unhappy">Unhappy with your website?</p>
         <h1>We create beautiful and fast web services</h1>
         <img
           src="images/heroImage.jpg"
           alt="An image of a team in front of a whiteboard"
         />
         <h2>Story, emotion and purpose</h2>
-        <p>
+        <p id="we-help">
           We help transform your ideas into real world applications that will
           outperform your toughest competition and help you achieve your
           strategic goals in short period of time.
         </p>
-        <form id="header-form">
+        <form id="header-form" class="flex-column">
           <label for="email">Want us to contact you?</label>
           <input type="email" name="email" placeholder="Email" required />
           <input type="submit" value="Join" />
@@ -94,7 +94,7 @@
         <h3>We offer high demand services</h3>
         <ul id="services-ul">
           <li>
-            <span>pen</span>
+            <span class="material-icons">create</span>
             <h4>UI/UX Design</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
@@ -103,7 +103,7 @@
             <button>Get started</button>
           </li>
           <li>
-            <span>pen</span>
+            <span class="material-icons">code</span>
             <h4>Front End</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
@@ -112,7 +112,7 @@
             <button>Get started</button>
           </li>
           <li>
-            <span>pen</span>
+            <span class="material-icons">storage</span>
             <h4>Back End</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
