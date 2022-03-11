@@ -200,9 +200,6 @@ nav {
   justify-content: space-between;
 }
 
-#open-nav {
-}
-
 #logo {
   height: 9.33vw;
 }
@@ -210,13 +207,31 @@ nav {
 #menu {
   width: 0vw;
   flex-direction: column;
-  height: 207vw;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   overflow-x: hidden;
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: black;
+  background-color: var(--blue);
+  transition: 0.3s;
+}
+
+#close-nav {
+  margin-top: 3.47vw;
+  margin-left: 88vw;
+}
+
+#nav-list-wrapper {
+  height: 90.13vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#nav-ul {
+  flex-direction: column;
+  row-gap: var(--size-36);
+  align-items: center;
 }
 
 header {
