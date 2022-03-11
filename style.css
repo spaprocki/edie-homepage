@@ -3,7 +3,9 @@
   padding: 0;
 }
 
-a, button, input[type=submit] {
+a,
+button,
+input[type='submit'] {
   cursor: pointer;
   text-decoration: none;
 }
@@ -148,7 +150,6 @@ nav {
 }
 
 #open-nav {
-
 }
 
 #logo {
@@ -205,16 +206,19 @@ h2 {
 }
 
 #header-form {
-  position: relative;
   margin-top: 8vw;
   margin-left: 10.67vw;
 }
 
-#header-form label {
+form {
+  position: relative;
+}
+
+form label {
   height: 5.6vw;
 }
 
-#header-form input[type='email'] {
+form input[type='email'] {
   appearance: none;
   height: 12.8vw;
   width: 72.53vw;
@@ -226,7 +230,7 @@ h2 {
   font-weight: 500;
 }
 
-#header-form input[type='submit'] {
+form input[type='submit'] {
   position: absolute;
   top: 6.67vw;
   left: 57.6vw;
@@ -316,7 +320,6 @@ main {
   font-weight: 300;
 }
 
-
 #see-more {
   margin-top: 9.6vw;
   align-items: center;
@@ -347,9 +350,9 @@ main {
   grid-template-columns: auto;
   grid-template-rows: auto;
   gap: 2.4vw;
-  grid-template-areas: 
-    "img1 img2"
-    "img1 img3";
+  grid-template-areas:
+    'img1 img2'
+    'img1 img3';
 }
 
 #img1 {
@@ -357,7 +360,7 @@ main {
   place-self: center;
 }
 
-#img1>img {
+#img1 > img {
   width: 47.5vw;
   height: auto;
   border-radius: var(--font-size-24);
@@ -367,7 +370,7 @@ main {
   grid-area: img2;
 }
 
-#img2>img {
+#img2 > img {
   width: 38.6vw;
   height: auto;
   border-radius: var(--font-size-24);
@@ -377,7 +380,7 @@ main {
   grid-area: img3;
 }
 
-#img3>img {
+#img3 > img {
   width: 43.26vw;
   height: auto;
   border-radius: var(--font-size-24);
@@ -395,7 +398,7 @@ blockquote {
   margin-top: 8vw;
 }
 
-#business-card>img {
+#business-card > img {
   width: 21.86vw;
   height: auto;
   border-radius: var(--font-size-12);
@@ -408,7 +411,7 @@ blockquote {
 
 footer {
   margin-top: 26.67vw;
-  background-color: var(--black)
+  background-color: var(--black);
 }
 
 #footer-wrapper {
@@ -427,10 +430,29 @@ footer {
   margin-left: var(--font-size-36);
 }
 
+#footer-icon {
+  height: 14vw;
+  font-weight: 800;
+}
+
 #icons-ul {
-  margin-top: 10vw;
+  margin-top: var(--font-size-10);
   column-gap: var(--font-size-12);
 }
 
+.icon {
+  height: var(--font-size-24);
+  width: auto;
+}
 
+#footer-form {
+  margin-top: 17vw;
+}
 
+#created-by {
+  margin-top: 41vw;
+  margin-bottom: var(--font-size-24);
+  font-family: Montserrat;
+  font-weight: 500;
+  text-align: center;
+}

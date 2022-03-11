@@ -25,33 +25,45 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="style.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" />
 
-    <link href="desktop-style.css" rel="stylesheet"/>
+    <link href="desktop-style.css" rel="stylesheet" />
 
     <title>Edie Homepage</title>
 
-    <style>
-      
-    </style>
   </head>
   <body>
     <div id="site-wrapper">
       <nav class="flex-row">
         <p id="logo" class="text-gray-1 font-24">Edie</p>
         <a href="javascript:void(0)">
-          <span id="open-nav" class="material-icons font-24 text-gray-1" onclick="openNav()">
+          <span
+            id="open-nav"
+            class="material-icons font-24 text-gray-1"
+            onclick="openNav()"
+          >
             menu
           </span>
         </a>
         <div id="menu" class="flex">
           <a href="javascript:void(0)" onclick="closeNav()">
-            <span id="close-nav" class="material-icons font-24 text-gray-1"> close </span>
+            <span id="close-nav" class="material-icons font-24 text-gray-1">
+              close
+            </span>
           </a>
           <div class="flex">
             <ul id="nav-ul">
-              <li id="home"><a href="#">Home</a><div id="line"></div></li>
+              <li id="home">
+                <a href="#">Home</a>
+                <div id="line"></div>
+              </li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Our Works</a></li>
               <li><a href="#">Clients</a></li>
@@ -62,7 +74,9 @@
       </nav>
       <header>
         <p id="unhappy" class="font-12 text-blue">Unhappy with your website?</p>
-        <h1 class="font-24 text-gray-1">We create beautiful and fast web services</h1>
+        <h1 class="font-24 text-gray-1">
+          We create beautiful and fast web services
+        </h1>
         <img
           src="images/heroImage.jpg"
           alt="An image of a team in front of a whiteboard"
@@ -74,13 +88,27 @@
           strategic goals in short period of time.
         </p>
         <form id="header-form" class="flex-column">
-          <label for="email" class="font-10 text-gray-3">Want us to contact you?</label>
-          <input type="email" name="email" class="font-14 text-gray-4 bg-gray-6" placeholder="Email" required />
-          <input type="submit" class="font-14 text-gray-6 bg-blue" value="Join" />
+          <label for="email" class="font-10 text-gray-3"
+            >Want us to contact you?</label
+          >
+          <input
+            type="email"
+            name="email"
+            class="font-14 text-gray-4 bg-gray-6"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="submit"
+            class="font-14 text-gray-6 bg-blue"
+            value="Join"
+          />
         </form>
       </header>
       <main>
-        <h3 id="we-offer" class="font-24 text-gray-1">We offer high demand services</h3>
+        <h3 id="we-offer" class="font-24 text-gray-1">
+          We offer high demand services
+        </h3>
         <ul id="services-ul" class="flex">
           <li class="flex-column">
             <div class="flex-column bg-blue span-wrapper">
@@ -91,7 +119,9 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
               metus ac nulla consequat aliquet id quis turpis.
             </p>
-            <button class="font-16 text-gray-3 bg-gray-5 services-button">Get started</button>
+            <button class="font-16 text-gray-3 bg-gray-5 services-button">
+              Get started
+            </button>
           </li>
           <li class="flex-column">
             <div class="flex-column bg-green span-wrapper">
@@ -102,7 +132,9 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
               metus ac nulla consequat aliquet id quis turpis.
             </p>
-            <button class="font-16 text-gray-3 bg-gray-5 services-button">Get started</button>
+            <button class="font-16 text-gray-3 bg-gray-5 services-button">
+              Get started
+            </button>
           </li>
           <li class="flex-column">
             <div class="flex-column bg-red span-wrapper">
@@ -113,42 +145,82 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
               metus ac nulla consequat aliquet id quis turpis.
             </p>
-            <button class="font-16 text-gray-3 bg-gray-5 services-button">Get started</button>
+            <button class="font-16 text-gray-3 bg-gray-5 services-button">
+              Get started
+            </button>
           </li>
         </ul>
-        <h3 id="good-design" class="font-24 text-gray-1">Good design means good business</h3>
+        <h3 id="good-design" class="font-24 text-gray-1">
+          Good design means good business
+        </h3>
         <ul id="designs-ul" class="flex-column">
           <li class="flex-column">
-            <img class="designs-image" src="images/smarthome.jpg" alt="An image of a smart home dashboard app"/>
-            <h6 class="font-12 text-gray-3 designs-genre">Full stack application</h6>
-            <h5 class="font-18 text-gray-1 designs-example">Smart home dashboard</h5>
+            <img
+              class="designs-image"
+              src="images/smarthome.jpg"
+              alt="An image of a smart home dashboard app"
+            />
+            <h6 class="font-12 text-gray-3 designs-genre">
+              Full stack application
+            </h6>
+            <h5 class="font-18 text-gray-1 designs-example">
+              Smart home dashboard
+            </h5>
           </li>
           <li class="flex-column">
-            <img class="designs-image" src="images/booking.png" alt="An image of a booking system app"/>
-            <h6 class="font-12 text-gray-3 designs-genre">Mobile application</h6>
+            <img
+              class="designs-image"
+              src="images/booking.png"
+              alt="An image of a booking system app"
+            />
+            <h6 class="font-12 text-gray-3 designs-genre">
+              Mobile application
+            </h6>
             <h5 class="font-18 text-gray-1 designs-example">Booking system</h5>
           </li>
           <li class="flex-column">
-            <img class="designs-image" src="images/onboard.png" alt="An image of an onboard app"/>
+            <img
+              class="designs-image"
+              src="images/onboard.png"
+              alt="An image of an onboard app"
+            />
             <h6 class="font-12 text-gray-3 designs-genre">UX/UI design</h6>
-            <h5 class="font-18 text-gray-1 designs-example">Onboard application</h5>
+            <h5 class="font-18 text-gray-1 designs-example">
+              Onboard application
+            </h5>
           </li>
           <li>
-            <img class="designs-image" src="images/juice-product.png" alt="An image of a juice product homepage"/>
-            <h6 class="font-12 text-gray-3 designs-genre">Front End application</h6>
-            <h5 class="font-18 text-gray-1 designs-example">Juice product homepage</h5>
+            <img
+              class="designs-image"
+              src="images/juice-product.png"
+              alt="An image of a juice product homepage"
+            />
+            <h6 class="font-12 text-gray-3 designs-genre">
+              Front End application
+            </h6>
+            <h5 class="font-18 text-gray-1 designs-example">
+              Juice product homepage
+            </h5>
           </li>
-          <a id="see-more" class="font-18 text-blue flex-row">see more<span class="material-icons font-24">arrow_right_alt</span></a>
+          <a id="see-more" class="font-18 text-blue flex-row"
+            >see more<span class="material-icons font-24"
+              >arrow_right_alt</span
+            ></a
+          >
         </ul>
         <div id="team" class="flex-column">
           <div id="team-text-wrapper">
             <p id="meet-the-team" class="font-18 text-red">Meet the team</p>
-            <h3 id="we-are-chilled" class="font-36 text-gray-1">We are chilled and a laidback team</h3>
-            <p id="team-lorem-ipsum" class="font-16 text-gray-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 id="we-are-chilled" class="font-36 text-gray-1">
+              We are chilled and a laidback team
+            </h3>
+            <p id="team-lorem-ipsum" class="font-16 text-gray-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
           <ul id="team-images-ul">
             <li id="img1">
-              <img  src="images/person3.png" alt="An image of a person1" />
+              <img src="images/person3.png" alt="An image of a person1" />
             </li>
             <li id="img2">
               <img src="images/person1.png" alt="An image of a person2" />
@@ -175,8 +247,13 @@
       <footer>
         <div id="footer-wrapper" class="flex">
           <ul id="footer-nav-ul" class="flex-column">
-            <li><a class="font-18 text-white" href="#">Home</a><div id="line"></div></li>
-            <li><a class="font-18 text-white" href="#services-ul">Services</a></li>
+            <li>
+              <a class="font-18 text-white" href="#">Home</a>
+              <div id="line"></div>
+            </li>
+            <li>
+              <a class="font-18 text-white" href="#services-ul">Services</a>
+            </li>
             <li><a class="font-18 text-white" href="#">Our Works</a></li>
             <li><a class="font-18 text-white" href="#">Clients</a></li>
             <li><a class="font-18 text-white" href="#">Contact</a></li>
@@ -184,18 +261,50 @@
           <div id="social-media-container">
             <p id="footer-icon" class="font-36 text-gray-6">Edie</p>
             <ul id="icons-ul" class="flex-row">
-              <li><img src="images/instagram.svg" alt="icon of instagram"></li>
-              <li><img src="images/linkedin.svg" alt="icon of linkedin"></li>
-              <li><img src="images/twitter.svg" alt="icon of twitter"></li>
+              <li>
+                <img
+                  class="icon"
+                  src="images/instagram.svg"
+                  alt="icon of instagram"
+                />
+              </li>
+              <li>
+                <img
+                  class="icon"
+                  src="images/linkedin.svg"
+                  alt="icon of linkedin"
+                />
+              </li>
+              <li>
+                <img
+                  class="icon"
+                  src="images/twitter.svg"
+                  alt="icon of twitter"
+                />
+              </li>
             </ul>
-            <form id="footer-form">
-              <label for="email">Want us to contact you?</label>
-              <input type="email" name="email" placeholder="Email" required />
-              <input type="submit" value="Join" />
+            <form id="footer-form" class="flex-column">
+              <label for="email" class="font-10 text-gray-3"
+                >Want us to contact you?</label
+              >
+              <input
+                type="email"
+                name="email"
+                class="font-14 text-gray-4 bg-gray-6"
+                placeholder="Email"
+                required
+              />
+              <input
+                type="submit"
+                class="font-14 text-gray-6 bg-blue"
+                value="Join"
+              />
             </form>
-            </div>
           </div>
-        <p>created by <u>spaprocki</u> - devChallenges.io</p>
+          <p id="created-by" class="font-14 text-gray-6">
+            created by <u>spaprocki</u> - devChallenges.io
+          </p>
+        </div>
       </footer>
     </div>
 
@@ -208,19 +317,17 @@
         document.getElementById('menu').style.width = '0vw';
       }
 
-
       var mediaQueryList = window.matchMedia('(min-width: 768px)');
 
       function screenTest(e) {
         if (e.matches) {
-          openNav()
+          openNav();
         } else {
-          closeNav()
+          closeNav();
         }
       }
 
       mediaQueryList.addListener(screenTest);
     </script>
-
   </body>
 </html>
