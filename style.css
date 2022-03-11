@@ -14,6 +14,9 @@ ul {
   list-style: none;
 }
 
+
+/* VARIABLE DEFINITIONS */
+
 :root {
   --gray-1: #333333;
   --gray-2: #4f4f4f;
@@ -26,14 +29,18 @@ ul {
   --red: #eb5757;
   --black: #100e1d;
 
-  --font-size-36: 9.6vw;
-  --font-size-24: 6.4vw;
-  --font-size-18: 4.8vw;
-  --font-size-16: 4.27vw;
-  --font-size-14: 3.73vw;
-  --font-size-12: 3.2vw;
-  --font-size-10: 2.67vw;
+  --size-36: 9.6vw;
+  --size-24: 6.4vw;
+  --size-18: 4.8vw;
+  --size-16: 4.27vw;
+  --size-14: 3.73vw;
+  --size-12: 3.2vw;
+  --size-10: 2.67vw;
 }
+
+/* VARIABLE DEFINITIONS */
+
+/* GENERAL CLASSES DEFINITIONS */
 
 .bg-blue {
   background-color: var(--blue);
@@ -92,31 +99,63 @@ ul {
 }
 
 .font-10 {
-  font-size: var(--font-size-10);
+  font-size: var(--size-10);
 }
 
 .font-12 {
-  font-size: var(--font-size-12);
+  font-size: var(--size-12);
 }
 
 .font-14 {
-  font-size: var(--font-size-14);
+  font-size: var(--size-14);
 }
 
 .font-16 {
-  font-size: var(--font-size-16);
+  font-size: var(--size-16);
 }
 
 .font-18 {
-  font-size: var(--font-size-18);
+  font-size: var(--size-18);
 }
 
 .font-24 {
-  font-size: var(--font-size-24);
+  font-size: var(--size-24);
 }
 
 .font-36 {
-  font-size: var(--font-size-36);
+  font-size: var(--size-36);
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extra-bold {
+  font-weight: 800;
+}
+
+.font-heebo {
+  font-family: 'Heebo';
+}
+
+.font-montserrat {
+  font-family: 'Montserrat';
+}
+
+.font-poppins {
+  font-family: 'Poppins';
 }
 
 .flex-column {
@@ -132,6 +171,18 @@ ul {
 .flex {
   display: flex;
 }
+
+.margin-40 {
+  margin-left: 10.67vw;
+}
+
+.border-none {
+  border: none;
+}
+
+
+
+/* GENERAL CLASSES DEFINITIONS */
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -153,7 +204,6 @@ nav {
 }
 
 #logo {
-  font-weight: 800;
   height: 9.33vw;
 }
 
@@ -174,13 +224,7 @@ header {
   width: 92.8vw;
 }
 
-#unhappy {
-  margin-left: 10.67vw;
-}
-
 h1 {
-  margin-left: 10.67vw;
-  font-weight: 500;
   width: 72.53vw;
 }
 
@@ -193,21 +237,16 @@ header > img {
 
 h2 {
   margin-top: 6.4vw;
-  margin-left: 10.67vw;
-  font-weight: 500;
   width: 60.53vw;
 }
 
 #we-help {
   margin-top: 9.6vw;
-  margin-left: 10.67vw;
-  font-weight: 400;
   width: 73.33vw;
 }
 
 #header-form {
   margin-top: 8vw;
-  margin-left: 10.67vw;
 }
 
 form {
@@ -222,12 +261,8 @@ form input[type='email'] {
   appearance: none;
   height: 12.8vw;
   width: 72.53vw;
-  border: none;
-  border-radius: var(--font-size-12);
-  padding-left: var(--font-size-18);
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  border-radius: var(--size-12);
+  padding-left: var(--size-18);
 }
 
 form input[type='submit'] {
@@ -236,8 +271,7 @@ form input[type='submit'] {
   left: 57.6vw;
   width: 18.93vw;
   height: 10.4vw;
-  border-radius: var(--font-size-12);
-  border: none;
+  border-radius: var(--size-12);
 }
 
 main {
@@ -246,8 +280,6 @@ main {
 }
 
 #we-offer {
-  margin-left: 10.67vw;
-  font-weight: 500;
   width: 69vw;
 }
 
@@ -259,7 +291,7 @@ main {
 
 #services-ul li {
   row-gap: 8vw;
-  border-radius: var(--font-size-24);
+  border-radius: var(--size-24);
   padding: 13vw 9vw;
   transition: 0.3s;
 }
@@ -273,7 +305,7 @@ main {
   align-items: center;
   width: 17.87vw;
   height: 17.87vw;
-  border-radius: var(--font-size-16);
+  border-radius: var(--size-16);
 }
 
 .services-description {
@@ -283,11 +315,7 @@ main {
 .services-button {
   width: 30.93vw;
   height: 11.2vw;
-  border-radius: var(--font-size-12);
-  border: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  border-radius: var(--size-12);
   transition: 0.3s;
 }
 
@@ -297,7 +325,6 @@ main {
 }
 
 #good-design {
-  margin-left: 10.67vw;
   margin-top: 29.87vw;
   width: 71.2vw;
 }
@@ -312,12 +339,11 @@ main {
   margin-top: 9.6vw;
   height: 92.8vw;
   width: 92.8vw;
-  border-radius: var(--font-size-12);
+  border-radius: var(--size-12);
 }
 
 .designs-genre {
   margin-top: 3.73vw;
-  font-weight: 300;
 }
 
 #see-more {
@@ -334,18 +360,16 @@ main {
   margin-top: 1.87vw;
   font-weight: 500;
   width: 74.67vw;
-  font-style: normal;
 }
 
 #team-lorem-ipsum {
   margin-top: 3.73vw;
-  font-weight: 400;
   width: 72.8vw;
-  line-height: var(--font-size-24);
+  line-height: var(--size-24);
 }
 
 #team-images-ul {
-  margin-top: var(--font-size-36);
+  margin-top: var(--size-36);
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -363,7 +387,7 @@ main {
 #img1 > img {
   width: 47.5vw;
   height: auto;
-  border-radius: var(--font-size-24);
+  border-radius: var(--size-24);
 }
 
 #img2 {
@@ -373,7 +397,7 @@ main {
 #img2 > img {
   width: 38.6vw;
   height: auto;
-  border-radius: var(--font-size-24);
+  border-radius: var(--size-24);
 }
 
 #img3 {
@@ -383,7 +407,7 @@ main {
 #img3 > img {
   width: 43.26vw;
   height: auto;
-  border-radius: var(--font-size-24);
+  border-radius: var(--size-24);
 }
 
 #quote {
@@ -391,7 +415,7 @@ main {
 }
 
 blockquote {
-  line-height: var(--font-size-36);
+  line-height: var(--size-36);
 }
 
 #business-card {
@@ -401,7 +425,7 @@ blockquote {
 #business-card > img {
   width: 21.86vw;
   height: auto;
-  border-radius: var(--font-size-12);
+  border-radius: var(--size-12);
 }
 
 #business-card-text {
@@ -419,29 +443,25 @@ footer {
 }
 
 #footer-nav-ul {
-  margin-top: var(--font-size-36);
-  margin-left: var(--font-size-36);
-  font-weight: 400;
-  row-gap: var(--font-size-18);
+  margin-top: var(--size-36);
+  row-gap: var(--size-18);
 }
 
 #social-media-container {
   margin-top: 17vw;
-  margin-left: var(--font-size-36);
 }
 
 #footer-icon {
   height: 14vw;
-  font-weight: 800;
 }
 
 #icons-ul {
-  margin-top: var(--font-size-10);
-  column-gap: var(--font-size-12);
+  margin-top: var(--size-10);
+  column-gap: var(--size-12);
 }
 
 .icon {
-  height: var(--font-size-24);
+  height: var(--size-24);
   width: auto;
 }
 
@@ -451,8 +471,6 @@ footer {
 
 #created-by {
   margin-top: 41vw;
-  margin-bottom: var(--font-size-24);
-  font-family: Montserrat;
-  font-weight: 500;
+  margin-bottom: var(--size-24);
   text-align: center;
 }
