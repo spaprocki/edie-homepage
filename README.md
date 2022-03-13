@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://papi-edie-homepage.netlify.app">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/spaprocki/edie-homepage">
       Solution
     </a>
     <span> | </span>
@@ -37,22 +37,35 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://spaprocki.github.io/hosted-assets/edie-homepage-screenshot.PNG)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+During completing this challenge I've decided to use another method of styling html elements. In previous challenges I started with assigning IDs and classes to HTML elements and the adding style to those selectors.
+
+In this challenge I started with creating CSS variables, and them using them in a general class e.g.:
+
+```
+  .text-red {
+    color: var(--red);
+  }
+```
+
+After creating a number of such classes, I would apply them to selected HTML elements, e.g.:
+
+```
+  <h1 class="font-24 desktop-font-48 text-gray-1 font-medium margin-40 desktop-margin-277">
+```
+
+This method worked well for some of the properties, that were applied repeatedly to many elements of the HTML file. Nevertheless I still had to apply IDs to some elements, which properties velues were exclusive to them only (e.g. margins).
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [HTML](https://developer.mozilla.org/pl/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/pl/docs/Web/CSS)
+- [Material Design Icons](https://materialdesignicons.com/)
 
 ## Features
 
@@ -87,6 +100,5 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@spaprocki](https://github.com/spaprocki)
+
