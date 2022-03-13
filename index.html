@@ -61,35 +61,40 @@
               <li>
                 <a
                   class="font-24 font-medium font-poppins text-white desktop-text-gray-1"
-                  href="#"
+                  href="#unhappy"
+                  onclick="closeNav()"
                   >Home</a
                 >
               </li>
               <li>
                 <a
                   class="font-24 font-medium font-poppins text-white desktop-text-gray-1"
-                  href="#"
+                  href="#we-offer"
+                  onclick="closeNav()"
                   >Services</a
                 >
               </li>
               <li>
                 <a
                   class="font-24 font-medium font-poppins text-white desktop-text-gray-1"
-                  href="#"
+                  href="#good-design"
+                  onclick="closeNav()"
                   >Our Works</a
                 >
               </li>
               <li>
                 <a
                   class="font-24 font-medium font-poppins text-white desktop-text-gray-1"
-                  href="#"
+                  href="#quote"
+                  onclick="closeNav()"
                   >Clients</a
                 >
               </li>
               <li>
                 <a
                   class="font-24 font-medium font-poppins text-white desktop-text-gray-1"
-                  href="#"
+                  href="#footer-wrapper"
+                  onclick="closeNav()"
                   >Contact</a
                 >
               </li>
@@ -311,20 +316,30 @@
       </main>
       <footer>
         <div id="footer-wrapper" class="flex">
-          <ul id="footer-nav-ul" class="flex-column margin-40 desktop-margin-165 font-regular">
+          <ul
+            id="footer-nav-ul"
+            class="flex-column margin-40 desktop-margin-165 font-regular"
+          >
             <li>
-              <a class="font-18 text-white" href="#">Home</a>
+              <a class="font-18 text-white" href="#unhappy">Home</a>
               <div id="line"></div>
             </li>
             <li>
-              <a class="font-18 text-white" href="#services-ul">Services</a>
+              <a class="font-18 text-white" href="#we-offer">Services</a>
             </li>
-            <li><a class="font-18 text-white" href="#">Our Works</a></li>
-            <li><a class="font-18 text-white" href="#">Clients</a></li>
-            <li><a class="font-18 text-white" href="#">Contact</a></li>
+            <li>
+              <a class="font-18 text-white" href="#good-design">Our Works</a>
+            </li>
+            <li><a class="font-18 text-white" href="#quote">Clients</a></li>
+            <li>
+              <a class="font-18 text-white" href="#footer-wrapper">Contact</a>
+            </li>
           </ul>
           <div id="social-media-container" class="margin-40">
-            <p id="footer-icon" class="font-36 text-gray-6 font-heebo font-extra-bold">
+            <p
+              id="footer-icon"
+              class="font-36 text-gray-6 font-heebo font-extra-bold"
+            >
               Edie
             </p>
             <ul id="icons-ul" class="flex-row">
@@ -358,7 +373,7 @@
             <input
               type="email"
               name="email"
-              class="font-14 text-gray-4 bg-gray-6 font-medium font-poppins border-none "
+              class="font-14 text-gray-4 bg-gray-6 font-medium font-poppins border-none"
               placeholder="Email"
               required
             />
@@ -369,7 +384,10 @@
             />
           </form>
         </div>
-        <p id="created-by" class="font-14 text-gray-6 font-medium font-montserrat">
+        <p
+          id="created-by"
+          class="font-14 text-gray-6 font-medium font-montserrat"
+        >
           created by <u>spaprocki</u> - devChallenges.io
         </p>
       </footer>
@@ -381,7 +399,8 @@
       }
 
       function closeNav() {
-        document.getElementById('menu').style.width = '0vw';
+        if (document.getElementById('menu').style.width == '100vw')
+          document.getElementById('menu').style.width = '0vw';
       }
 
       var mediaQueryList = window.matchMedia('(min-width: 768px)');
