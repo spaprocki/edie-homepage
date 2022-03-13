@@ -192,6 +192,7 @@ body {
 
 #site-wrapper {
   margin: auto;
+  height: fit-content;
 }
 
 nav {
@@ -371,15 +372,16 @@ main {
   margin-top: 26.67vw;
 }
 
+#team-text-wrapper {
+  width: 74.67vw;
+}
+
 #we-are-chilled {
   margin-top: 1.87vw;
-  font-weight: 500;
-  width: 74.67vw;
 }
 
 #team-lorem-ipsum {
   margin-top: 3.73vw;
-  width: 72.8vw;
   line-height: var(--size-24);
 }
 
@@ -449,6 +451,8 @@ blockquote {
 }
 
 footer {
+  display: block;
+  overflow: auto;
   margin-top: 26.67vw;
   background-color: var(--black);
 }
