@@ -39,7 +39,6 @@
 
 ![screenshot](https://spaprocki.github.io/hosted-assets/edie-homepage-screenshot.PNG)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 During completing this challenge I've decided to use another method of styling html elements. In previous challenges I started with assigning IDs and classes to HTML elements and the adding style to those selectors.
 
